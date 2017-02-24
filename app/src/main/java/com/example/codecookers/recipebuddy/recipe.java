@@ -17,10 +17,24 @@ public class recipe {
         name = n;
     }
 
-    public String[] getSteps(){
+    public String[] getSteps() {
         return steps;
     }
-    public String[] getIngredients(){
-        return ingredients;
+
+    public void setSteps(String[] steps) {
+        this.steps = steps;
+    }
+
+    public  void setIngredients(String[] ingred,int[] quant){
+        ingredients = ingred;
+        quantities = quant;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

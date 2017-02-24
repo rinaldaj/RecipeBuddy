@@ -8,5 +8,5 @@ public interface DataSystem {
     recipe[] getRecipes();
     boolean saveRecipe(recipe r);
     boolean deleteRecipe(recipe r);
-    boolean replaceRecipe(receipe old, recipe nu);
+    boolean replaceRecipe(recipe old, recipe nu);
 }

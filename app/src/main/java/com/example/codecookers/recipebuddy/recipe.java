@@ -6,14 +6,12 @@ package com.example.codecookers.recipebuddy;
 
 public class recipe {
     protected String[] steps;
-    protected String[] ingredients;
-    protected int[] quantities;// this should be parallel to ingredients
+    protected Ingredients[] ingredients;
     protected String name;
 
-    public recipe(String n,String[] ing,int[] quant , String[] stp){
+    public recipe(String n,Ingredients[] ing, String[] stp){
         steps = stp;
         ingredients = ing;
-        quantities = quant;
         name = n;
     }
 
@@ -25,9 +23,8 @@ public class recipe {
         this.steps = steps;
     }
 
-    public  void setIngredients(String[] ingred,int[] quant){
+    public  void setIngredients(Ingredients[] ingred){
         ingredients = ingred;
-        quantities = quant;
     }
 
     public String getName() {

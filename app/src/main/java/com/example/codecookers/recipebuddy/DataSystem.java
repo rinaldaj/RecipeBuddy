@@ -5,8 +5,11 @@ package com.example.codecookers.recipebuddy;
  */
 
 public interface DataSystem {
-    recipe[] getRecipes();
-    boolean saveRecipe(recipe r);
-    boolean deleteRecipe(recipe r);
-    boolean replaceRecipe(recipe old, recipe nu);
+    public recipe[] getRecipes();
+    public void saveRecipe(recipe r);
+    public void deleteRecipe(recipe r);
+    public void replaceRecipe(recipe old, recipe nu);
+    public double getStock(Ingredients ing);
+    public void addStock(Ingredients ing);
+
 }

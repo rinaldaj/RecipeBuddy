@@ -4,9 +4,9 @@ package com.example.codecookers.recipebuddy;
  * Created by Anthony on 3/11/2017.
  */
 public class Ingredients {
-    protected String name;
-    protected double quantity;
-    protected String units;
+    private String name;
+    private double quantity;
+    private String units;
 
     public Ingredients(String n,double d,String u){
         name = n;

@@ -5,9 +5,9 @@ package com.example.codecookers.recipebuddy;
  */
 
 public class recipe {
-    protected String[] steps;
-    protected Ingredients[] ingredients;
-    protected String name;
+    private String[] steps;
+    private Ingredients[] ingredients;
+    private String name;
 
     public recipe(String n,Ingredients[] ing, String[] stp){
         steps = stp;
@@ -33,5 +33,9 @@ public class recipe {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Ingredients[] getIngredients() {
+        return ingredients;
     }
 }

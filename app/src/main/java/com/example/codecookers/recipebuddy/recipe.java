@@ -8,11 +8,13 @@ public class recipe {
     private String[] steps;
     private Ingredients[] ingredients;
     private String name;
+    private int timesMade;
 
-    public recipe(String n,Ingredients[] ing, String[] stp){
+    public recipe(String n,Ingredients[] ing, String[] stp,int times){
         steps = stp;
         ingredients = ing;
         name = n;
+        timesMade = times;
     }
 
     public String[] getSteps() {
@@ -37,5 +39,13 @@ public class recipe {
 
     public Ingredients[] getIngredients() {
         return ingredients;
+    }
+
+    public int getTimesMade() {
+        return timesMade;
+    }
+
+    public void setTimesMade(int timesMade) {
+        this.timesMade = timesMade;
     }
 }

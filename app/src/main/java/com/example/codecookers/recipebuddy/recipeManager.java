@@ -85,7 +85,9 @@ public class recipeManager implements DataSystem {
 
     @Override
     public void deleteRecipe(recipe r) {
-
+        //should get recipe id from the one that is clicked on then delete that one
+        //add recipe id to the recipe class
+        db.execSQL("DELETE FROM RECIPES WHERE name = " + r.getName() );
     }
 
     @Override

@@ -13,6 +13,19 @@ public class Ingredients {
         quantity = d;
         units = u;
     }
+    
+    public String setName(String str) {
+        name = str;
+    }
+    
+    public String setQunatity(double qty) {
+        quantity = qtr;
+    }
+    
+    public String setUnits(String uni) {
+        units = uni;
+    }
+    
     public String getName() {
         return name;
     }

@@ -14,15 +14,15 @@ public class Ingredients {
         units = u;
     }
     
-    public String setName(String str) {
+    public void setName(String str) {
         name = str;
     }
     
-    public String setQunatity(double qty) {
+    public void setQunatity(double qty) {
         quantity = qtr;
     }
     
-    public String setUnits(String uni) {
+    public void setUnits(String uni) {
         units = uni;
     }
     

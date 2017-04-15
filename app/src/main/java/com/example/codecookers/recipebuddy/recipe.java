@@ -9,6 +9,8 @@ public class recipe {
     private Ingredients[] ingredients;
     private String name;
     private int timesMade;
+    private int rating;
+    private String cookBook;
 
     public recipe(String n,Ingredients[] ing, String[] stp,int times){
         steps = stp;
@@ -47,5 +49,21 @@ public class recipe {
 
     public void setTimesMade(int timesMade) {
         this.timesMade = timesMade;
+    }
+
+    public String getCookBook() {
+        return cookBook;
+    }
+
+    public void setCookBook(String cookBook) {
+        this.cookBook = cookBook;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
     }
 }
